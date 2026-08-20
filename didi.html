@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Prathvi Collection | Kosi Kalan</title>
+
+<meta name="description" content="Prathvi collection Kosi Kalan - Premium Ladies Suits, Anarkali, Patiala, Sharara & Designer Collection.">
+<meta name="theme-color" content="#831843">
+
+<style>
+/* =========================
+   RESET & GLOBAL
+========================= */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fff8fa;
+    color:#374151;
+    overflow-x:hidden;
+}
+
+:root{
+    --primary:#831843;
+    --primary-dark:#500724;
+    --pink:#db2777;
+    --light-pink:#fff1f6;
+    --gold:#d4a017;
+    --gold-light:#f9e7a7;
+    --white:#fff;
+    --dark:#24131c;
+    --green:#25d366;
+    --shadow:0 15px 45px rgba(92,20,54,.13);
+}
+
+a{
+    text-decoration:none;
+}
+
+button{
+    font-family:inherit;
+}
+
+/* =========================
+   TOP ANNOUNCEMENT
+========================= */
+.topbar{
+    background:linear-gradient(90deg,#500724,#831843,#be185d,#831843,#500724);
+    background-size:300% 100%;
+    animation:gradientMove 8s linear infinite;
+    color:white;
+    text-align:center;
+    padding:9px 15px;
+    font-size:14px;
+    font-weight:600;
+}
+
+@keyframes gradientMove{
+    0%{background-position:0%}
+    100%{background-position:300%}
+}
+
+/* =========================
+   HEADER
+========================= */
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,.95);
+    backdrop-filter:blur(15px);
+    box-shadow:0 5px 25px rgba(0,0,0,.08);
+}
+
+.navbar{
+    max-width:1250px;
+    margin:auto;
+    min-height:75px;
+    padding:10px 20px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo-icon{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    display:grid;
+    place-items:center;
+    color:white;
+    font-size:22px;
+    background:linear-gradient(135deg,var(--primary),var(--pink));
+    box-shadow:0 7px 20px rgba(131,24,67,.3);
+}
+
+.logo-text h2{
+    color:var(--primary);
+    font-size:20px;
+}
+
+.logo-text span{
+    color:#777;
+    font-size:11px;
+    letter-spacing:1.5px;
+}
+
+nav{
+    display:flex;
+    gap:8px;
+    align-items:center;
+}
+
+nav a{
+    color:#4b3540;
+    font-weight:600;
+    padding:10px 14px;
+    border-radius:25px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:white;
+    background:var(--primary);
+}
+
+.nav-whatsapp{
+    background:var(--green)!important;
+    color:white!important;
+}
+
+/* MOBILE MENU */
+.menu-btn{
+    display:none;
+    border:0;
+    background:var(--primary);
+    color:white;
+    width:43px;
+    height:43px;
+    border-radius:50%;
+    font-size:22px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero{
+    min-height:calc(100vh - 115px);
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+    padding:60px 20px;
+    overflow:hidden;
+
+    background:
+        linear-gradient(90deg,rgba(70,5,34,.88),rgba(70,5,34,.42),rgba(0,0,0,.55)),
+        url("https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1800&q=90")
+        center/cover;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:50%;
+    right:-200px;
+    top:-200px;
+}
+
+.hero::after{
+    content:"";
+    position:absolute;
+    width:350px;
+    height:350px;
+    border:1px solid rgba(255,255,255,.18);
+    border-radius:50%;
+    left:-150px;
+    bottom:-150px;
+}
+
+.hero-content{
+    max-width:850px;
+    position:relative;
+    z-index:2;
+    animation:heroIn 1s ease;
+}
+
+@keyframes heroIn{
+    from{
+        opacity:0;
+        transform:translateY(35px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.badge{
+    display:inline-block;
+    padding:9px 18px;
+    border:1px solid rgba(255,255,255,.5);
+    border-radius:30px;
+    background:rgba(255,255,255,.1);
+    backdrop-filter:blur(10px);
+    color:#ffeab0;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:clamp(2.4rem,6vw,5rem);
+    line-height:1.08;
+    margin-bottom:20px;
+    text-shadow:0 5px 25px rgba(0,0,0,.4);
+}
+
+.hero h1 span{
+    color:#ffd76a;
+}
+
+.hero p{
+    font-size:clamp(1rem,2vw,1.35rem);
+    color:#ffeef5;
+    max-width:700px;
+    margin:0 auto 30px;
+    line-height:1.7;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 27px;
+    border-radius:35px;
+    font-weight:800;
+    transition:.3s;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.btn-primary:hover{
+    transform:translateY(-4px) scale(1.03);
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(8px);
+}
+
+.btn-outline:hover{
+    background:white;
+    color:var(--primary);
+}
+
+/* =========================
+   FLOATING TRUST
+========================= */
+.trust-strip{
+    max-width:1100px;
+    margin:-45px auto 0;
+    position:relative;
+    z-index:5;
+    background:white;
+    border-radius:18px;
+    box-shadow:var(--shadow);
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    overflow:hidden;
+}
+
+.trust-item{
+    text-align:center;
+    padding:22px 15px;
+    border-right:1px solid #eee;
+}
+
+.trust-item:last-child{
+    border:none;
+}
+
+.trust-item strong{
+    display:block;
+    color:var(--primary);
+    font-size:17px;
+    margin-bottom:5px;
+}
+
+.trust-item span{
+    font-size:12px;
+    color:#777;
+}
+
+/* =========================
+   SECTION
+========================= */
+section.content-section{
+    padding:90px 20px 30px;
+}
+
+.section-head{
+    text-align:center;
+    max-width:700px;
+    margin:0 auto 45px;
+}
+
+.small-title{
+    color:var(--pink);
+    text-transform:uppercase;
+    font-weight:800;
+    letter-spacing:2px;
+    font-size:13px;
+    margin-bottom:10px;
+}
+
+.section-head h2{
+    color:var(--primary);
+    font-size:clamp(2rem,4vw,3rem);
+    margin-bottom:12px;
+}
+
+.section-head p{
+    color:#777;
+    line-height:1.7;
+}
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+.categories{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:35px;
+}
+
+.category{
+    border:1px solid #e8cbd7;
+    background:white;
+    color:var(--primary);
+    padding:10px 20px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:700;
+    transition:.3s;
+}
+
+.category:hover,
+.category.active{
+    background:var(--primary);
+    color:white;
+    border-color:var(--primary);
+}
+
+/* =========================
+   PRODUCT GRID
+========================= */
+.products{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 8px 30px rgba(70,10,35,.08);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(70,10,35,.17);
+}
+
+.card-image{
+    height:350px;
+    overflow:hidden;
+    position:relative;
+    background:#f8eaf0;
+}
+
+.card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.tag{
+    position:absolute;
+    top:15px;
+    left:15px;
+    z-index:2;
+    background:var(--primary);
+    color:white;
+    padding:7px 12px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:800;
+}
+
+.favorite{
+    position:absolute;
+    top:15px;
+    right:15px;
+    z-index:2;
+    width:38px;
+    height:38px;
+    border:0;
+    border-radius:50%;
+    background:white;
+    cursor:pointer;
+    font-size:18px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.favorite:hover{
+    color:#e11d48;
+}
+
+.card-body{
+    padding:20px;
+}
+
+.card-body h3{
+    color:var(--primary);
+    font-size:18px;
+    margin-bottom:7px;
+}
+
+.rating{
+    color:#f59e0b;
+    font-size:13px;
+    margin-bottom:8px;
+}
+
+.rating span{
+    color:#888;
+    margin-left:5px;
+}
+
+.price{
+    color:var(--gold);
+    font-size:20px;
+    font-weight:900;
+    margin-bottom:15px;
+}
+
+.price small{
+    color:#999;
+    text-decoration:line-through;
+    font-size:13px;
+    margin-left:6px;
+}
+
+.buy-btn{
+    display:block;
+    width:100%;
+    text-align:center;
+    padding:12px;
+    border-radius:12px;
+    background:var(--green);
+    color:white;
+    font-weight:800;
+    transition:.3s;
+}
+
+.buy-btn:hover{
+    transform:scale(1.02);
+    box-shadow:0 7px 20px rgba(37,211,102,.25);
+}
+
+/* =========================
+   OFFER BANNER
+========================= */
+.offer{
+    max-width:1200px;
+    margin:90px auto 20px;
+    min-height:300px;
+    border-radius:25px;
+    overflow:hidden;
+    position:relative;
+    display:flex;
+    align-items:center;
+    padding:50px;
+    color:white;
+
+    background:
+        linear-gradient(90deg,rgba(80,7,36,.95),rgba(131,24,67,.75),rgba(131,24,67,.2)),
+        url("https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+}
+
+.offer-content{
+    max-width:600px;
+}
+
+.offer h2{
+    font-size:clamp(2rem,4vw,3.2rem);
+    margin-bottom:10px;
+}
+
+.offer p{
+    color:#ffe7ef;
+    margin-bottom:22px;
+    line-height:1.6;
+}
+
+/* =========================
+   WHY US
+========================= */
+.features{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.feature{
+    background:white;
+    padding:30px 20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+    transition:.3s;
+}
+
+.feature:hover{
+    transform:translateY(-7px);
+}
+
+.feature-icon{
+    width:65px;
+    height:65px;
+    margin:0 auto 15px;
+    display:grid;
+    place-items:center;
+    border-radius:50%;
+    background:var(--light-pink);
+    font-size:28px;
+}
+
+.feature h3{
+    color:var(--primary);
+    font-size:17px;
+    margin-bottom:8px;
+}
+
+.feature p{
+    color:#777;
+    font-size:13px;
+    line-height:1.6;
+}
+
+/* =========================
+   ABOUT
+========================= */
+.about{
+    max-width:1100px;
+    margin:70px auto 0;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-image{
+    height:430px;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+}
+
+.about-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.about-text h2{
+    color:var(--primary);
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.about-text p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.about-list{
+    list-style:none;
+}
+
+.about-list li{
+    margin:13px 0;
+    font-weight:600;
+}
+
+.about-list li::first-letter{
+    color:var(--pink);
+}
+
+/* =========================
+   INSTAGRAM STYLE GALLERY
+========================= */
+.gallery{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+}
+
+.gallery div{
+    height:280px;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.gallery img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.5s;
+}
+
+.gallery div:hover img{
+    transform:scale(1.1);
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact-box{
+    max-width:1100px;
+    margin:auto;
+    border-radius:25px;
+    background:linear-gradient(135deg,var(--primary-dark),var(--primary),var(--pink));
+    padding:50px;
+    color:white;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    box-shadow:var(--shadow);
+}
+
+.contact-box h2{
+    font-size:35px;
+    margin-bottom:15px;
+}
+
+.contact-box p{
+    color:#ffe9f2;
+    line-height:1.7;
+    margin-bottom:12px;
+}
+
+.contact-details{
+    margin-top:20px;
+}
+
+.contact-details a{
+    display:block;
+    color:white;
+    margin:12px 0;
+    font-weight:600;
+}
+
+.contact-card{
+    background:white;
+    color:var(--dark);
+    padding:30px;
+    border-radius:20px;
+}
+
+.contact-card h3{
+    color:var(--primary);
+    margin-bottom:15px;
+}
+
+.contact-card a{
+    display:block;
+    text-align:center;
+    margin-top:15px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+footer{
+    margin-top:80px;
+    background:#300316;
+    color:white;
+    padding:50px 20px 25px;
+}
+
+.footer-grid{
+    max-width:1100px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:40px;
+}
+
+footer h3{
+    color:#ffd76a;
+    margin-bottom:15px;
+}
+
+footer p,
+footer a{
+    color:#e9cbd5;
+    line-height:1.8;
+    font-size:14px;
+}
+
+footer a{
+    display:block;
+    margin:5px 0;
+}
+
+.copyright{
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,.1);
+    margin-top:35px;
+    padding-top:20px;
+    color:#b99aa6;
+    font-size:12px;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:999;
+    width:62px;
+    height:62px;
+    display:grid;
+    place-items:center;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    font-size:29px;
+    box-shadow:0 8px 25px rgba(37,211,102,.45);
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{
+        box-shadow:0 8px 25px rgba(37,211,102,.45);
+    }
+    50%{
+        box-shadow:0 8px 35px rgba(37,211,102,.75);
+    }
+}
+
+/* =========================
+   SCROLL TOP
+========================= */
+.scroll-top{
+    position:fixed;
+    right:25px;
+    bottom:95px;
+    width:42px;
+    height:42px;
+    border:0;
+    border-radius:50%;
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+    display:none;
+    z-index:999;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:1000px){
+    .products{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .features{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .gallery{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+@media(max-width:768px){
+
+    .navbar{
+        min-height:65px;
+    }
+
+    .menu-btn{
+        display:block;
+    }
+
+    nav{
+        position:absolute;
+        top:65px;
+        left:0;
+        width:100%;
+        background:white;
+        padding:15px;
+        display:none;
+        flex-direction:column;
+        box-shadow:0 10px 20px rgba(0,0,0,.08);
+    }
+
+    nav.show{
+        display:flex;
+    }
+
+    nav a{
+        width:100%;
+        text-align:center;
+    }
+
+    .hero{
+        min-height:650px;
+    }
+
+    .trust-strip{
+        margin:-25px 15px 0;
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .trust-item:nth-child(2){
+        border-right:0;
+    }
+
+    .trust-item:nth-child(-n+2){
+        border-bottom:1px solid #eee;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+        gap:12px;
+    }
+
+    .card-image{
+        height:260px;
+    }
+
+    .card-body{
+        padding:14px;
+    }
+
+    .card-body h3{
+        font-size:15px;
+    }
+
+    .price{
+        font-size:17px;
+    }
+
+    .offer{
+        margin:60px 15px 20px;
+        padding:30px;
+    }
+
+    .about{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .about-image{
+        height:350px;
+    }
+
+    .contact-box{
+        grid-template-columns:1fr;
+        padding:30px 20px;
+        margin:0 15px;
+    }
+
+    .footer-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:480px){
+
+    .logo-text h2{
+        font-size:16px;
+    }
+
+    .logo-text span{
+        font-size:9px;
+    }
+
+    .logo-icon{
+        width:40px;
+        height:40px;
+        font-size:18px;
+    }
+
+    .products{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .card-image{
+        height:220px;
+    }
+
+    .buy-btn{
+        font-size:12px;
+        padding:10px 5px;
+    }
+
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .gallery{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .gallery div{
+        height:180px;
+    }
+
+    .hero-buttons .btn{
+        width:100%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+    <h1><b>RADHE RADHE </b></h1>
+    ✨ नई फैशन कलेक्शन | शादी & त्योहार के लिए Special Collection ✨
+</div>
+
+<!-- HEADER -->
+<header>
+    <div class="navbar">
+
+        <a href="#home" class="logo">
+            <div class="logo-icon">👗</div>
+
+            <div class="logo-text">
+                <h2>Prathvi Collection</h2>
+                <span>KOSI KALAN • PREMIUM COLLECTION</span>
+            </div>
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">About</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+            <a class="nav-whatsapp"
+               href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20latest%20collection%20dekhni%20hai">
+               💬 WhatsApp
+            </a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="badge">
+            ✨ Kosi Kalan's Fashion Destination
+        </div>
+
+        <h1>
+            हर अंदाज़ में दिखें<br>
+            <span>खूबसूरत & शाही</span>
+        </h1>
+
+        <p>
+            Premium Ladies Suits, Designer Anarkali, Patiala,
+            Sharara और Party Wear की शानदार Collection।
+            आपके हर खास मौके के लिए।
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#collection" class="btn btn-primary">
+                🛍️ Collection देखें
+            </a>
+
+            <a href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20latest%20collection%20aur%20prices%20dekhne%20hain"
+               class="btn btn-outline">
+                💬 WhatsApp करें
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TRUST -->
+<div class="trust-strip">
+
+    <div class="trust-item">
+        <strong>⭐ Premium Quality</strong>
+        <span>बेहतरीन Fabric & Finish</span>
+    </div>
+
+    <div class="trust-item">
+        <strong>💰 Best Price</strong>
+        <span>Affordable Fashion</span>
+    </div>
+
+    <div class="trust-item">
+        <strong>👗 Latest Designs</strong>
+        <span>New Fashion Collection</span>
+    </div>
+
+    <div class="trust-item">
+        <strong>💬 Easy Shopping</strong>
+        <span>WhatsApp पर Order</span>
+    </div>
+
+</div>
+
+<!-- COLLECTION -->
+<section class="content-section" id="collection">
+
+    <div class="section-head">
+
+        <div class="small-title">Our Collection</div>
+
+        <h2>✨ Exclusive Ladies Suit Type Available</h2>
+
+        <p>
+            अपनी पसंद का डिजाइन WhatsApp पर Send krein
+            हमसे कीमत और उपलब्धता पूछें।
+        </p>
+
+    </div>
+
+    <!-- FILTER -->
+    <div class="categories">
+
+        <button class="category active" onclick="filterProducts('all',this)">
+            All
+        </button>
+
+        <button class="category" onclick="filterProducts('anarkali',this)">
+            Anarkali
+        </button>
+
+        <button class="category" onclick="filterProducts('cotton',this)">
+            Cotton
+        </button>
+
+        <button class="category" onclick="filterProducts('patiala',this)">
+            Patiala
+        </button>
+
+        <button class="category" onclick="filterProducts('party',this)">
+            Party Wear
+        </button>
+
+    </div>
+
+    <!-- PRODUCTS -->
+    <div class="products">
+
+        <!-- PRODUCT 1 -->
+        <div class="card product" data-category="anarkali">
+
+            <div class="card-image">
+                <button class="favorite"
+                        onclick="favorite(this)">
+                    ♡
+                </button>
+
+                   <b>"Royal Anarkali Suit"</b>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>रॉयल अनारकली सूट</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>4.9/5</span>
+                </div>
+
+                <a class="buy-btn"
+                   href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20Royal%20Anarkali%20Suit%20ke%20baare%20mein%20jaanna%20hai">
+                    💬 WhatsApp पर पूछें
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 2 -->
+        <div class="card product" data-category="cotton">
+
+            <div class="card-image">
+                <button class="favorite"
+                        onclick="favorite(this)">
+                    ♡
+                </button>
+
+             <b> "Premium Cotton Suit"</b>  
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>प्रीमियम कॉटन सूट</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>4.8/5</span>
+                </div>
+
+
+                <a class="buy-btn"
+                   href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20Premium%20Cotton%20Suit%20ke%20baare%20mein%20jaanna%20hai">
+                    💬 WhatsApp पर पूछें
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 3 -->
+        <div class="card product" data-category="patiala">
+
+            <div class="card-image">
+                <button class="favorite"
+                        onclick="favorite(this)">
+                    ♡
+                </button>
+
+                <b>"Patiala Suit"</b>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>पटियाला सलवार सूट</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>4.9/5</span>
+                </div>
+
+                <a class="buy-btn"
+                   href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20Patiala%20Suit%20ke%20baare%20mein%20jaanna%20hai">
+                    💬 WhatsApp पर पूछें
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 4 -->
+        <div class="card product" data-category="party">
+
+            <div class="card-image">
+
+                <button class="favorite"
+                        onclick="favorite(this)">
+                    ♡
+                </button>
+
+              <b>"Party Wear Suits"</b>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>पार्टीवेयर शरारा</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>5.0/5</span>
+                </div>
+
+                <a class="buy-btn"
+                   href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20Partywear%20Sharara%20ke%20baare%20mein%20jaanna%20hai">
+                    💬 WhatsApp पर पूछें
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 5 -->
+        <div class="card product" data-category="anarkali">
+
+            <div class="card-image">
+                <button class="favorite"
+                        onclick="favorite(this)">
+                    ♡
+                </button>
+
+              <b>"Designer Anarkali"</b>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>डिज़ाइनर अनारकली</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>4.9/5</span>
+                </div>
+
+               
+                <a class="buy-btn"
+                   href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20Designer%20Anarkali%20ke%20baare%20mein%20jaanna%20hai">
+                    💬 WhatsApp पर पूछें
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT 6 -->
+        <div class="card product" data-category="cotton">
+
+            <div class="card-image">
+                <button class="favorite"
+                        onclick="favorite(this)">
+                    ♡
+                </button>
+                
+                <b>"Cotton Ladies Suit"</b>
+
+            </div>
+
+            <div class="card-body">
+
+                <h3>Elegant Cotton Suit</h3>
+
+                <div class="rating">
+                    ★★★★★ <span>4.8/5</span>
+                </div>
+
+                <a class="buy-btn"
+                   href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20Elegant%20Cotton%20Suit%20ke%20baare%20mein%20jaanna%20hai">
+                    💬 WhatsApp पर पूछें
+                </a>
+
+            </div>
+
+        </div>
+
+
+       
+
+</section>
+
+
+<!-- OFFER -->
+<section class="offer">
+
+    <div class="offer-content">
+
+        <div class="small-title" style="color:#ffd76a;">
+            Special Offer
+        </div>
+
+        <h2>🎉 Festive Collection पर शानदार Deals and Offers!</h2>
+
+        <p>
+            शादी, त्योहार या किसी भी खास मौके के लिए
+            अपना पसंदीदा Designer Suit आज ही चुनें।
+        </p>
+
+        <a href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20Festive%20Collection%20aur%20offers%20ke%20baare%20mein%20jaanna%20hai"
+           class="btn btn-primary">
+            💬 Offer पूछें
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- WHY US -->
+<section class="content-section" id="about">
+
+    <div class="section-head">
+
+        <div class="small-title">Why Choose Us</div>
+
+        <h2>💖 Shopping का भरोसेमंद अनुभव</h2>
+
+        <p>
+            Quality, latest fashion और customer satisfaction —
+            यही हमारी पहली priority है।
+        </p>
+
+    </div>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature-icon">👗</div>
+            <h3>Premium Quality</h3>
+            <p>बेहतरीन Fabric और शानदार finishing के साथ quality products.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">💰</div>
+            <h3>Best Prices</h3>
+            <p>Fashionable collection उचित और affordable prices पर.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">✨</div>
+            <h3>Latest Designs</h3>
+            <p>नए trends और latest designs की शानदार range.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">❤️</div>
+            <h3>Customer First</h3>
+            <p>आपकी पसंद और satisfaction हमारे लिए सबसे जरूरी है.</p>
+        </div>
+
+    </div>
+
+
+    <!-- ABOUT -->
+    <div class="about">
+
+        <div class="about-image">
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROkH5wrS_MPNGCk42t2s3ppQaPGznOv9moFlAK9XzT9Q&s=10"
+                 alt="Prathvi Collection">
+
+        </div>
+
+        <div class="about-text">
+
+            <div class="small-title">
+                About Prathvi Cloth Store
+            </div>
+
+            <h2>आपकी Fashion, हमारी जिम्मेदारी ❤️</h2>
+
+            <p>
+                Prathvi Collection में आपको Ladies Suits,
+                Anarkali, Patiala, Cotton और Party Wear की
+                stylish और premium collection मिलती है।
+            </p>
+
+            <ul class="about-list">
+                <li>✅ Latest Fashion Collection</li>
+                <li>✅ Premium Fabric & Finishing</li>
+                <li>✅ उचित दाम</li>
+                <li>✅ Friendly Customer Service</li>
+                <li>✅ WhatsApp पर आसान जानकारी</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- GALLERY -->
+<section class="content-section" id="gallery">
+
+    <div class="section-head">
+
+        <div class="small-title">Our Style</div>
+
+        <h2>📸 Fashion Gallery Only For Display </h2>
+
+        <p>
+            Yha per photo sirf display ke liye lagaaye hue h ager apko suit chiye to whatsaap pr contact kre 
+        </p>
+
+    </div>
+
+    <div class="gallery">
+
+        <div>
+            <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=700&q=85">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTjn90w6wvtdT1OmQcPX4r32cM8VO_QNkq51mH5YI9TA&s=10">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQorhePngeEvoPxGihJKD9VdgchvF5s2wLb19zK0LZ-_g&s=10">
+        </div>
+
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI46CcgVDj0D6r-82JRW69QbprooEjF6eKjWqtD2OL3A&s=10">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="content-section" id="contact">
+
+    <div class="contact-box">
+
+        <div>
+
+            <div class="small-title" style="color:#ffd76a;">
+                Visit / Contact Us
+            </div>
+
+            <h2>आइए, अपनी पसंद का Suit चुनें 💖</h2>
+
+            <p>
+                Website पर पसंद आया design WhatsApp पर भेजें
+                और हम आपको price, size और availability की जानकारी देंगे।
+            </p>
+
+            <div class="contact-details">
+
+                <a href="https://wa.me/917500932029">
+                    📱 +91 7500932029
+                </a>
+
+                <a href="tel:+917500932029">
+                    ☎️ Call Now
+                </a>
+
+                <a href="https://maps.google.com/?q=Kosi+Kalan+Uttar+Pradesh">
+                    📍  Kosi Kalan Main Merket (Shekhan Gali front of Shiv Mandir) 
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <h3>💬 WhatsApp Shopping</h3>
+
+            <p>
+                कोई product पसंद आया?
+                हमें WhatsApp पर message करें।
+            </p>
+
+            <a href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20aapki%20latest%20Ladies%20Suit%20Collection%20dekhni%20hai"
+               class="btn"
+               style="background:#25d366;color:white;">
+                💬 Chat on WhatsApp
+            </a>
+
+            <a href="tel:+917500932029"
+               class="btn"
+               style="background:var(--primary);color:white;">
+                📞 Call Store
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+            <h3>👗 Prathvi Cloth Store</h3>
+
+            <p>
+                Kosi Kalan का आपका अपना Ladies Fashion Store.
+                Premium Suits और Latest Designs के लिए
+                हमसे जुड़ें।
+            </p>
+        </div>
+
+        <div>
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#collection">Collection</a>
+            <a href="#about">Why Us</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div>
+            <h3>Contact</h3>
+
+            <a href="tel:+917500932029">
+                📞 +91 7500932029
+            </a>
+
+            <a href="https://wa.me/917500932029">
+                💬 WhatsApp
+            </a>
+
+            <p>
+                📍 Kosi Kalan,<br>
+                Main Market, Shekhan gali Front of Shiv Mandir(मेन मार्केट, शेखान गली, शिव मंदिर के सामने)
+            </p>
+        </div>
+
+    </div>
+
+    <div class="copyright">
+        © 2026 Prathvi Collection. All Rights Reserved.
+        <br>
+        Made with ❤️ for Fashion Lovers
+    </div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+<a class="whatsapp-float"
+   href="https://wa.me/917500932029?text=Hello%20Prathvi%20Cloth%20Store%2C%20mujhe%20latest%20collection%20dekhni%20hai"
+   title="Chat on WhatsApp">
+    💬
+</a>
+
+<!-- SCROLL TOP -->
+<button class="scroll-top"
+        id="scrollTop"
+        onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+</button>
+
+
+<script>
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+function toggleMenu(){
+
+    const nav = document.getElementById("nav");
+
+    nav.classList.toggle("show");
+
+}
+
+
+/* =========================
+   PRODUCT FILTER
+========================= */
+
+function filterProducts(category, button){
+
+    const products = document.querySelectorAll(".product");
+    const buttons = document.querySelectorAll(".category");
+
+    buttons.forEach(btn => {
+        btn.classList.remove("active");
+    });
+
+    button.classList.add("active");
+
+    products.forEach(product => {
+
+        if(category === "all" ||
+           product.dataset.category === category){
+
+            product.style.display = "block";
+
+            setTimeout(() => {
+                product.style.opacity = "1";
+                product.style.transform = "translateY(0)";
+            },10);
+
+        }else{
+
+            product.style.opacity = "0";
+            product.style.transform = "translateY(15px)";
+
+            setTimeout(() => {
+                product.style.display = "none";
+            },200);
+
+        }
+
+    });
+
+}
+
+
+/* =========================
+   FAVORITE BUTTON
+========================= */
+
+function favorite(button){
+
+    if(button.innerHTML.includes("♡")){
+
+        button.innerHTML = "♥";
+        button.style.color = "#e11d48";
+
+    }else{
+
+        button.innerHTML = "♡";
+        button.style.color = "#374151";
+
+    }
+
+}
+
+
+/* =========================
+   SCROLL TOP BUTTON
+========================= */
+
+window.addEventListener("scroll", function(){
+
+    const scrollButton = document.getElementById("scrollTop");
+
+    if(window.scrollY > 500){
+        scrollButton.style.display = "block";
+    }else{
+        scrollButton.style.display = "none";
+    }
+
+});
+
+
+/* =========================
+   CLOSE MOBILE MENU
+========================= */
+
+document.querySelectorAll("nav a").forEach(link => {
+
+    link.addEventListener("click", function(){
+
+        document.getElementById("nav").classList.remove("show");
+
+    });
+
+});
+
+
+/* =========================
+   HERO PARALLAX EFFECT
+========================= */
+
+window.addEventListener("scroll", function(){
+
+    const hero = document.querySelector(".hero");
+
+    if(window.scrollY < window.innerHeight){
+
+        hero.style.backgroundPositionY =
+            (window.scrollY * 0.35) + "px";
+
+    }
+
+});
+
+</script>
+
+</body>
+</html>
